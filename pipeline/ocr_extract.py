@@ -21,10 +21,9 @@ def ocrExtraction():
     for proc_img in proc_dir:
         path = os.path.join("data\\processed_images", proc_img)
         proc_path_list.append(path)                                     #Basically this updates the list with relative paths so that paddleocr can receive them correctly
-        print(proc_path_list)
 
     for i in proc_path_list:
-        print(i)
+
         result = ocr.predict(input=i)                                  #Iterating through the list and passing images to paddleocr
         for res in result:
             texts = res['rec_texts']
@@ -36,6 +35,8 @@ def ocrExtraction():
         with open("data\\extracted_text\\question_paper.txt", mode, encoding="utf-8") as f:
             for text, score, box in zip(texts, scores, boxes):
                 f.write(text + "\n")
+
+    return "Successfully Extracted for:", proc_path_list 
 
 # for text, score, box in zip(texts, scores, boxes):
         # print(f"[{score:.3f}] {text} [{boxes}]")
