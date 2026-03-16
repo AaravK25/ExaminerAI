@@ -52,140 +52,27 @@ flowchart TD
 ## 🗂️ Project Structure
 
 ```
-autograder/
-├── ingestion/
-│   ├── upload.py              # Image upload handler
-│   ├── preprocess.py          # Crop, deskew, contrast enhancement
-│   └── ocr.py                 # PaddleOCR wrapper + text extraction
+ExaminerAI/
+├── app/
+│   └── main.py                # Application entry point
 │
-├── retrieval/
-│   ├── vector_db/
-│   │   ├── collections.py     # Maths / Science / English collections
-│   │   └── ingest_rubrics.py  # Rubric chunking & embedding ingestion
-│   ├── router.py              # Subject classifier / query router
-│   ├── hybrid_search.py       # Vector + BM25 hybrid retrieval
-│   └── crag_verifier.py       # Relevance check & re-retrieval logic
+├── data/
+│   ├── extracted_text/        # OCR-extracted text output
+│   ├── processed_images/      # Preprocessed (cropped & enhanced) images
+│   └── raw_images/            # Original uploaded answer sheet scans
 │
-├── evaluation/
-│   ├── gemma_evaluator.py     # Gemma inference (GPU)
-│   └── scoring.py             # Mark assignment + confidence scoring
+├── pipeline/
+│   ├── upload.py              # Image upload handler (Step 1)
+│   ├── preprocess.py          # Crop, deskew, contrast enhancement (Step 2)
+│   ├── ocr_extract.py         # PaddleOCR wrapper + text extraction (Step 3)
+│   ├── text_clean.py          # Clean & normalise extracted text (Step 4)
+│   ├── rag_retriever.py       # Query router, hybrid search & CRAG verifier (Steps 6a–6c)
+│   ├── evaluator.py           # Gemma inference — answer vs rubric (Steps 7–8)
+│   └── scoring.py             # Mark assignment + confidence scoring (Step 9)
 │
-├── output/
-│   └── formatter.py           # Structured output: marks, gaps, flags
-│
-├── config.py                  # Model paths, DB URIs, hyperparameters
-├── pipeline.py                # End-to-end orchestration
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## ⚙️ Setup
-
-### Prerequisites
-
-| Requirement | Version |
-|---|---|
-| Python | ≥ 3.10 |
-| CUDA | ≥ 11.8 (for Gemma GPU inference) |
-| PaddlePaddle | ≥ 2.5 |
-| Vector DB | Qdrant / Weaviate / ChromaDB |
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-org/autograder.git
-cd autograder
-
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install PaddleOCR
-pip install paddlepaddle-gpu paddleocr
-```
-
-### Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-# Vector Database
-VECTOR_DB_URI=http://localhost:6333
-VECTOR_DB_API_KEY=your_api_key_here
-
-# Gemma Model
-GEMMA_MODEL_PATH=/models/gemma-2b-it
-GEMMA_DEVICE=cuda          # or cpu
-
-# Retrieval
-TOP_K=5
-HYBRID_ALPHA=0.5           # 0 = pure BM25, 1 = pure vector
-CRAG_THRESHOLD=0.75        # Relevance score cutoff
-
-# Collections
-MATHS_COLLECTION=maths_rubrics
-SCIENCE_COLLECTION=science_rubrics
-ENGLISH_COLLECTION=english_rubrics
-```
-
----
-
-## Usage
-
-### Run the full pipeline on a single answer sheet
-
-```python
-from pipeline import AutoGrader
-
-grader = AutoGrader()
-result = grader.grade(image_path="answer_sheet.jpg")
-
-print(result)
-# {
-#   "marks": 14,
-#   "max_marks": 20,
-#   "confidence": 0.87,
-#   "missing_points": ["Did not mention Newton's third law", "No units on final answer"],
-#   "review_flag": False
-# }
-```
-
-### Ingest rubrics into the vector database
-
-```bash
-python retrieval/vector_db/ingest_rubrics.py \
-  --subject science \
-  --rubric_dir ./rubrics/science/ \
-  --chunk_size 256
-```
-
-### Run from the command line
-
-```bash
-python pipeline.py --image answer_sheet.jpg --output results.json
-```
-
----
-
-## Output Schema
-
-| Field | Type | Description |
-|---|---|---|
-| `marks` | `int` | Marks awarded to the student |
-| `max_marks` | `int` | Total marks possible for the question |
-| `confidence` | `float` | Grading confidence score (0.0 – 1.0) |
-| `missing_points` | `list[str]` | Key rubric points absent from the answer |
-| `review_flag` | `bool` | `True` if human review is recommended |
-| `subject` | `str` | Detected subject (Maths / Science / English) |
-| `ocr_text` | `str` | Raw extracted text from the answer sheet |
-
----
 
 ## Pipeline Deep Dive
 
