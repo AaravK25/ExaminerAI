@@ -1,4 +1,3 @@
-<div align="center">
 ```mermaid
 flowchart TD
     A([📄 Upload answer sheet image]) --> B[Preprocess<br>crop & enhance]
@@ -27,5 +26,3 @@ flowchart TD
     style E fill:#065F46,color:#fff,stroke:none
     style J fill:#7C3AED,color:#fff,stroke:none
 ```
-
-</div>
