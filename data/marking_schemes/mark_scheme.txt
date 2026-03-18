@@ -1,0 +1,229 @@
+# Exam: Physics — Class IX (End Term)
+
+**Time:** 2 hours
+
+**Marks:** 50
+
+---
+
+## Paper layout (for reference)
+
+* **Section A — Objective:** 10 × 1 = 10 marks
+* **Section B — Short Answer (I):** 6 × 2 = 12 marks
+* **Section C — Short Answer (II):** 4 × 3 = 12 marks
+* **Section D — Long Answer / Numerical / Explanation:** 4 × 4 = 16 marks
+
+**Total = 50**
+
+---
+
+## General Marking Instructions (must follow)
+
+* Award marks exactly as per the pointwise scheme below. Each bullet = the specified fractional mark.
+* **Semantic equivalence allowed:** if a student expresses the same idea in different words, give full credit. Score by idea, not exact words.
+* **Numerical problems:** award partial marks for correct method/steps even if final numerical value is incorrect (show working).
+* If an answer is contradictory or self-canceling, **do not award marks** for those points.
+* **Write the total for each question** on the answer script.
+* **Diagrams:** label clearly; award marks for correct labeled parts even if drawing is approximate.
+* If a student gives multiple answers to the same question, award marks only for the **first clear answer** unless question allows otherwise.
+* Use negative marking **only** where question explicitly states. Default: no negative marking.
+
+---
+
+# SECTION A — Objective (10 × 1 = 10)
+
+1. **Define speed.**
+
+   * *Model answer (1 mark):* Speed is the distance covered per unit time (or rate of change of distance).
+   * *Marking:* Award 1 mark for equivalent definition (e.g., distance/time).
+
+2. **State Newton’s Third Law in one sentence.**
+
+   * *Model answer (1 mark):* For every action there is an equal and opposite reaction (forces occur in pairs).
+
+3. **Unit of work in SI.**
+
+   * *Answer:* joule (or N·m). (1 mark)
+
+4. **Name the device used to detect sound in air.**
+
+   * *Answer:* Ear / microphone (accept either; 1 mark).
+
+5. **A car moves 0 m in 5 s — average speed?**
+
+   * *Answer:* 0 m/s (1 mark).
+
+6. **Give one example of a non-contact force.**
+
+   * *Answer:* Gravitational force (or electrostatic) (1 mark).
+
+7. **If mass doubles, does gravitational force between same two bodies double? (yes/no)**
+
+   * *Answer:* Yes (1 mark) — award if explanation: F ∝ m.
+
+8. **SI unit of power.**
+
+   * *Answer:* Watt (W) (1 mark).
+
+9. **Which quantity is scalar: speed or velocity?**
+
+   * *Answer:* Speed (1 mark).
+
+10. **Sound travels faster in air or water?**
+
+    * *Answer:* Water (1 mark).
+
+---
+
+# SECTION B — Short Answer I (6 × 2 = 12)
+
+**Q2. Distinguish between speed and velocity (two short points).** (2 marks)
+
+* *Model points (award 1 mark each):*
+
+  * Speed is scalar; velocity is vector (direction included).
+  * Speed = distance/time; velocity = displacement/time.
+* *Partial credit:* 1 mark for one correct distinction.
+
+**Q2. State one everyday example that illustrates Newton’s First Law. Briefly explain.** (2 marks)
+
+* *Model answer:* Example: A book on a table remains at rest until acted upon by a force; or when a bus suddenly stops, passengers lurch forward due to inertia.
+* *Marking:* 1 mark for example, 1 mark for brief explanation using inertia.
+
+**Q2. Write formula for gravitational force between two masses and define symbols.** (2 marks)
+
+* *Model answer:*  F = G * m1 * m2 / r^2
+
+  * Define: F = gravitational force; G = gravitational constant; m1, m2 = masses; r = separation.
+* *Marking:* 1.5–2 marks if formula and symbols defined; 1.5 if formula given but symbols not fully defined.
+
+**Q2. Give two ways to increase power delivered by a machine.** (2 marks)
+
+* *Model points (1 mark each):* Increase work done per unit time; decrease time for same work (i.e., do same work faster); increase input energy flow.
+
+**Q2. State and briefly explain what is meant by “work done is zero” for a person carrying a suitcase while walking horizontally at constant speed.** (2 marks)
+
+* *Model answer:* Work requires force component along displacement. The vertical support force is perpendicular to horizontal displacement, so work done by that force = 0. Carrying suitcase at constant height means net work against gravity = 0.
+* *Marking:* 2 marks for idea and brief explanation; 1 mark for partial.
+
+**Q2. What is amplitude of a sound wave and what does it determine?** (2 marks)
+
+* *Model answer:* Amplitude = maximum displacement of particles from mean position; determines loudness (greater amplitude → louder sound).
+* *Marking:* 1 mark for amplitude definition + 1 mark for loudness link.
+
+---
+
+# SECTION C — Short Answer II (4 × 3 = 12)
+
+**Q3. Kinematics numerical:**
+A car starts from rest and accelerates uniformly at 2 m/s². Find its velocity after 5 s and the distance covered in that time. (Show working.) (3 marks)
+
+* *Model solution (3 marks total):*
+
+  * v = u + at = 0 + 2 × 5 = 10 m/s. (1 mark)
+  * s = ut + 1/2 a t² = 0 + 0.5 × 2 × 25 = 25 m. (2 marks: 1 for formula/substitution, 1 for final numeric).
+* *Marking note:* Award method marks even if arithmetic slip.
+
+**Q3. Explain with diagram how density differs from mass. (Sketch required)** (3 marks)
+
+* *Model points (3 marks):*
+
+  * Define mass (amount of matter). (1 mark).
+  * Define density = mass/volume, unit kg/m³. (1 mark).
+  * Diagram: two cubes of equal volume, different masses — label masses and compute densities to show denser one. (1 mark).
+* *Marking:* Award diagram + labels even if drawing not neat.
+
+**Q3. A 5 N force and a 3 N force act simultaneously on an object in the same direction. What is the net force? If they act in opposite directions, what is net force? (Explain)** (3 marks)
+
+* *Model answer (3 marks):*
+
+  * Same direction: net = 5 + 3 = 8 N. (1 mark)
+  * Opposite direction: net = 5 − 3 = 2 N in direction of larger force. (1 mark)
+  * Brief explanation on vector addition/subtraction. (1 mark)
+
+**Q3. Explain the concept of conservation of energy with an example involving a pendulum (no heavy maths).** (3 marks)
+
+* *Model answer (3 marks):*
+
+  * Statement: Total mechanical energy (PE + KE) remains constant (ignoring friction). (1 mark)
+  * Example: At highest point, max PE and min KE; at lowest point, max KE and min PE; energy interchanges. (1 mark)
+  * Conclusion: energy conserved overall. (1 mark)
+
+---
+
+# SECTION D — Long Answer / Application (4 × 4 = 16)
+
+**Q4. (Numerical + reasoning)**
+A block of mass 2 kg is pushed along a horizontal surface with a force of 15 N. Frictional force is 5 N. Calculate:
+(a) acceleration of block
+(b) work done by the pushing force in moving the block 3 m.
+(Show steps) (4 marks)
+
+* *Model solution (4 marks):*
+
+  * (a) Net force = 15 − 5 = 10 N.
+
+    * a = F/m = 10 / 2 = 5 m/s². (2 marks: 1 for net force, 1 for acceleration calculation.)
+  * (b) Work by pushing force = F × s = 15 × 3 = 45 J. (2 marks: 1 for formula, 1 for numeric).
+* *Marking note:* Partial credit for correct method even if arithmetic off.
+
+**Q4. (Explain + diagram)**
+Explain Newton’s Third Law using the example of a swimmer pushing water to move forward. Include action/reaction pairs and why they don’t cancel. (4 marks)
+
+* *Model points (4 marks):*
+
+  * State 3rd law. (1 mark)
+  * Action: swimmer pushes water backward. (1 mark)
+  * Reaction: water pushes swimmer forward with equal opposite force. (1 mark)
+  * Explain why they don’t cancel: forces act on different bodies (water vs swimmer). (1 mark)
+* *Marking:* Award marks for diagram showing swimmer and water arrows.
+
+**Q4. (Long explanation)**
+Describe how pitch and loudness of a sound are related to frequency and amplitude respectively. Give one example showing change in pitch and one for loudness. (4 marks)
+
+* *Model answer (4 marks):*
+
+  * Pitch is determined by frequency: higher frequency → higher pitch. (1 mark)
+  * Loudness is determined by amplitude. (1 mark)
+  * Example (pitch): tightening a violin string → frequency increases → pitch rises. (0.5–1 mark)
+  * Example (loudness): striking a drum harder → amplitude increases → sound louder. (0.5–1 mark)
+* *Marking:* Award partial credit for clear examples.
+
+**Q4. (Application/extended)**
+A satellite orbits Earth in a circular orbit. Explain why astronauts feel weightless in orbit although gravity is acting on them. (4 marks)
+
+* *Model answer (4 marks):*
+
+  * In orbit both satellite and astronauts are in continuous free fall around Earth. (1 mark)
+  * They have centripetal acceleration provided by gravity. (1 mark)
+  * Since both astronaut and spaceship accelerate together, there’s no normal contact force on the astronaut — hence weightless sensation. (1 mark)
+  * Conclusion: gravity acts but no support reaction → weightlessness. (1 mark)
+
+---
+
+# Marking Notes — common errors and how to award partial credit
+
+* **Semantic paraphrase:** If student’s phrasing differs but conceptually correct, award full marks.
+* **Numericals:** 1 mark for correct formula/substitution, 1 mark for arithmetic, 1 mark for correct final (depending on question weight). Always show partials for method.
+* **Diagrams:** simple correct labeled sketch deserves marks even if not artistically perfect. Label correctness > neatness.
+* **Missing units:** deduct 0.5 to 1 mark where units are required for full correctness (apply consistently).
+* **Contradictory lines:** if student writes two conflicting answers, do not award marks for that part.
+* **Rounding errors:** allow small rounding differences (e.g., ±1% or reasonable depending on context).
+* **Unsupported claims:** if student asserts something without justification where explanation required, award half marks for partial relevant points.
+
+---
+
+# Suggested Rubric / Mark Allocation Style (for quick grading)
+
+* For each question, list the key rubric points (as above). Award each bullet point the stated marks.
+* Example quick checklist for Q4 (4 marks):
+
+  * Net force calculated = 1 mark
+  * Acceleration calculation = 1 mark
+  * Work formula stated = 1 mark
+  * Numeric work answer = 1 mark
+* This speeds checking and provides an auditable marking trail.
+
+---
+
+*End of document.*

@@ -1,1 +1,0 @@
-#Cleaning OCR text
