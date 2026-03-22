@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="assets/files/examinerAI_logo_dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/files/examinerAI_logo_light.svg">
-    <img src="assets/files/examinerAI_logo_light.svg" width="500" alt="ExaminerAI">
+    <source media="(prefers-color-scheme: dark)"  srcset="assets-readme/files/examinerAI_logo_dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets-readme/files/examinerAI_logo_light.svg">
+    <img src="assets-readme/files/examinerAI_logo_light.svg" width="500" alt="ExaminerAI">
   </picture>
 </p>
 
