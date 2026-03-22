@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets-readme/files/examinerAI_logo_dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets-readme/files/examinerAI_logo_light.svg">
-    <img src="assets-readme/files/examinerAI_logo_light.svg" width="500" alt="ExaminerAI">
+    <img src="assets-readme/files/examinerAI_logo_light.svg" width="1000" alt="ExaminerAI">
   </picture>
 </p>
 
