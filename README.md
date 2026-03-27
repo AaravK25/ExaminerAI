@@ -1,5 +1,10 @@
-# ExaminerAI — AI-Powered Answer Sheet Evaluation System
-
+<p align="center" style="margin-bottom: 0;">
+  <picture>
+    <source media="(prefers-color-scheme: dark)"  srcset="assets-readme/files/examinerAI_logo_dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets-readme/files/examinerAI_logo_light.svg">
+    <img src="assets-readme/files/examinerAI_logo_light.svg" width="100%" alt="ExaminerAI">
+  </picture>
+</p>
 An end-to-end pipeline that ingests handwritten answer sheet images, extracts text via OCR, retrieves subject-specific rubrics from a vector database, and evaluates student answers using a local LLM — producing marks, missing-point feedback, and confidence scores.
 
 ---
